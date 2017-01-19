@@ -1,0 +1,168 @@
+.body{
+	background-color: lightpink;
+	background-image: url(images/521011652.jpg);
+	background-size: cover;
+}
+
+header{
+	color: blue;
+	font-family: Georgia;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 40px;
+}
+
+a:hover{
+	background-color: pink;
+}
+
+.homenav{
+	text-align: center;
+	background-color: gray;
+	border: solid;
+	border-color: black;
+	margin-right: 70px;
+	margin-left: 70px;
+}
+
+.homenav ul li{
+	display: inline
+
+}
+
+.homenav ul li a{
+	text-decoration: underline;
+	color: white;
+	text-shadow: .4px .5px;
+	font-size: 20px;
+
+}
+
+.image{
+	height: 300px;
+	width: 300px;
+	float: right;
+}
+
+
+p{
+	color: white;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: center;
+	margin: 30px 20% 30px;
+}
+
+.gitlink{
+	text-decoration: none;
+	color: orange;
+	border: dashed;
+	font-family: fantasy;
+}
+
+.gallerybody{
+	background-color: black;
+	border: dashed;
+	border-color: gray;
+}
+
+div{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin: 20px;
+	background-color: lightpink;
+}
+
+.gallerynav{
+	text-align: center;
+	background-color: gray;
+	margin: 10px;
+}
+
+.gallerynav ul li{
+	display: inline;
+}
+.gallerynav ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+	border-right: 1px solid;
+	border-right-color: white;
+}
+
+.pic1{
+	background-image: url(images/pink-periwinkle-292628_960_720.jpg);
+	background-size: cover;
+}
+
+.page3body{
+	background-color: black;
+}
+
+.page3nav{
+	text-align: center;
+	background-color: navy;
+	margin: 15px;
+}
+
+.page3nav ul li{
+	display: inline;
+}
+
+.page3nav ul li a{
+	color: purple;
+	text-decoration: underline;
+	font-size: 35px;
+	border-right: 1px dashed;
+	border-color: white;
+}
+
+.pic2{
+	background-image: url(images/152026-004-48CC29A5.jpg);
+	background-size: cover;
+}
+
+.pic3{
+	background-image: url(images/pile-of-leaves.jpg);
+	background-size: cover;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){ /*phones*/
+	.body, .gallerybody, .page3body{
+		background-color: lightgreen;
+	}
+	div{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+	background-color: lightpink;
+	}
+}
+
+@media all and (min-width: 768px) { /*tablets*/
+	.body, .gallerybody, .page3body{
+		background-color: pink;
+	}
+	div{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 20px;
+	background-color: lightpink;
+	}
+}
+
+@media all and (min-width: 1024px){ /*desktop*/
+	.body, .gallerybody, .page3body{
+		background-color: black;
+	}
+	div{
+		width: 400px;
+		height: 400px;
+		float: left;
+		margin: 20px;
+		background-color: lightpink;
+	}
+}

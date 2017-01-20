@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background-color: violet; color: white;">
+	<h1 style="text-align: center;">Message Form</h1>
+
+	<a href="/allmessages">All Messages</a>
+
+	<br>
+	<br>
+	
+<form action="/messages" method="post">
+	<input type="text" name="title" placeholder="Message Title">
+	<br>
+	<br>
+	<textarea name="body" cols="75" rows="6" placeholder="Enter Message..."></textarea>
+	<br>
+	<br>
+	<input type="submit" value="Submit Message">
+</form>
+
+<br>
+
+
+<h3>Messages</h3>
+
+<ul>
+<% for(var i=0; i<data.length; i++) { %>
+	<li><a href=<%="messages/"+data[i].id%>><%= data[i].title %></a></li>
+	<% } %>
+
+</ul>
+
+
+</body>
+</html>

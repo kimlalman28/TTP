@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background-color: violet; color: white;">
+	<h1 style="text-align: center;">Messages</h1>
+
+	<a href="/messages">Form</a>
+
+	<% for(var i=0; i<data.length; i++) { %>
+	<h3><%= data[i].title %></h3>
+	<p><%= data[i].body %></p>
+	<% } %>
+
+
+
+</body>
+</html>
